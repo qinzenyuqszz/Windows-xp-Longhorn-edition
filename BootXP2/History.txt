@@ -1,0 +1,167 @@
+BootXPv 2.50 RC 1
+-------------------------------------------------------------------------------
+1.- Full compatibility with Service Pack 2 NTOSKRNL (Version 2.1.2600.1150).
+2.- Multiuser installation doesn't need to register the software twice anymore.
+3.- Now BootXP will save the progress bar position of the image files (BMP, JPG, ...) in INI files.
+4.- Fixed a 16 colors palette conversion error that makes to appear black zones in the bootscreen.
+5.- Improved installation and uninstallation process.
+
+BootXPv 2.30 RC 1
+-------------------------------------------------------------------------------
+1.- Fixed the blank screen bug in Windows 2000 mode, now will set the palette correctly under Windows 2000.
+2.- Removed the dependencies of the MFC 7.0 DLLs (smaller download and total ausence of problems due to non existing DLLs).
+3.- Added the option to disable the "Next Boot Screen Preview" window when you have activated the option of change the boot screen automatically.
+4.- Uninstall fixed, now will remove the BootXP files and Folder.
+5.- Better debug system, in case of error or hung will popup a MessageBox (this will help if BootXP even don't starts for you due that you can e-mail me the error message).
+
+BootXPv 2.25 FINAL
+-------------------------------------------------------------------------------
+1.- Full compatible with palette change and progress bar reposition in Service Pack 1 Kernel.
+2.- Now will "zero index" the Bitmap palette to avoid display problems at boot time.
+3.- Fixed a Shareware Window bug when clicked in "Click Now".
+4.- Now the BootXP window is resizable.
+5.- Now if you have selected the option of change the boot screen automatically when the system starts BootXP will automatically exit after do it (for zero footprint).
+6.- Added a "Reset Your Kernel File" button in options page that will be overwrite your LOGOOS.EXE file with a fresh copy of NTOSKRNL.EXE file (useful in case of kernel corruption).
+7.- Updated all the URLs to point to "www.fvip.net/bootxp".
+
+BootXPv 2.25 RC1 Public Release
+-------------------------------------------------------------------------------
+1.- Full compatible with palette change and progress bar reposition in Service Pack 1 Kernel.
+2.- Now will "zero index" the Bitmap palette to avoid display problems at boot time.
+3.- Fixed a Shareware Window bug when clicked in "Click Now".
+4.- Now the BootXP window is resizable.
+5.- Now if you have selected the option of change the boot screen automatically when the system 
+    starts BootXP will automatically exit after do it (for zero footprint).
+
+
+Version BootXPv2.1
+-------------------------------------------------------------------------------
+1.- Fixed a bug that make impossible that BootXPv2 can run, this bug was triggered
+    when you make a "Reinstall Of BootXP" in the boot.ini.
+2.- Fixed a crash that occurs when drag and drop image files that need to be converted.
+3.- Fixed a crash that occurs when you uses a TIFF with LZW compression.
+4.- Fixed a bug that make impossible to drag and drop NTOSKRNL files and Zipped NTOSKRNL files
+5.- Added the functionality of use any type of zipped bootscreen, not only NTOSKRNL files.
+6.- Added the feature to view the selected boot screen from the BootXP.net list.
+7.- Optimized code (smaller size and zero risk of crashes when converting JPGs) 
+    but now you need to have the next DLLs: MSVCR70.DLL, MFC70.DLL and MSVCI70.DLL
+    (all of them are available in download page)
+
+
+Version BootXPv2
+-------------------------------------------------------------------------------
+1.- Now you can use any size, any number of colors bitmaps and BootXPv2 will 
+    resize it and adjust color depth for use as boot screen.
+2.- You can use up to 9 input formats for use as boot screen: BMP, JPG, GIF, PNG,
+    PCX, TGA, TIF (Without LZW Compression), NTOSKRNL.EXE Files and ZIPPED NTOSKRNL.EXE
+    files (Download it and drag 'n drop it in BootXP).
+3.- Improved version detection code for security in horizontal progress bar 
+    position customization.
+4.- Progress bar horizontal position customization can be enabled/disabled 
+    (disabled by default) to avoid B.S.D. (Blue Screen Of Death) problems.
+5.- BOOT.INI edition rewritten, more safer and with the new option of delete 
+    undesired BOOT.INI Lines (like the backup lines).
+6.- Alternate progress bar now will be saved for future uses, due to the useless 
+    of the alternate overlay, the option has been removed.
+7.- Change boot logo automatically evertime windows starts it's reactivated and 
+    fully working, also you will see the next boot screen preview before boot.
+8.- Added 3 sites more to see and download bootscreens.
+9.- Added integration with BootXP.net, now you can query a list of boot screens 
+    from the BootXPv2 interface to see the new additions in BootXp.net without need
+    to open you web explorer.
+10.- If you are first time user, BootXPv2 will create a boot screens folder into 
+     your windows directory in the subfolder resources, avoiding some problems that
+     can occurs using non-existing folders.
+11.- BOOT.INI line backup it's created automatically for security. You can remove it
+     later using the new option "Delete OS Line"
+12.- Black palettes are automatically fixed with the palette contained in the NTOSKNRL.
+     Due to this feature the button "Blank palette..." was removed.
+13.- Full compatibility with Windows 2000 Server, a bug in this release was finally fixed.
+14.- Previews now are 2 times faster due to code optimization.
+
+
+Version 1.90 RC2
+-------------------------------------------------------------------------------
+1.- Now Supports Progress Bar Positioning in 5.1.2600.0 and 5.1.2600.31 Versions
+    of NTOSKRNL.
+2.- Now Checks The Version and Prevents to Reposition the Progress Bar In Not
+    Supported Kernels (Avoiding the Blue Screens Of Death).
+3.- Now Loads The Correct Position of Progress Bar When The Source Is a 
+    NTOSKRNL.EXE File of Version: 5.1.2600.0 
+
+Version 1.90 RC1
+-------------------------------------------------------------------------------
+* Fixed a Palette Error, Previous Versions Will Always Set The First Palette
+  Index as Black.
+* Fixed a Installation Bug That Put the Option "/KERNEL=LOGOOS.EXE" outside the
+  current BOOT.INI Line.
+* Added Support for Vertical Positioning of the Progress Bar.
+* Corrected a Few Typos. My Terrible English Strikes Back :-)
+
+Version 1.85c
+-------------------------------------------------------------------------------
+* Fixed a Bug That Hungs BootXP When Uses NTOSKRNL.EXE Files
+
+Version 1.85b
+-------------------------------------------------------------------------------
+* Added Compatibility With Newer Versions Of NTOSKRNL.EXE Files
+
+Version 1.85a
+-------------------------------------------------------------------------------
+* Added Repair BOOT.INI Option
+
+Version 1.85
+-------------------------------------------------------------------------------
+* Added a Installer For Easy Installation.
+* Fixed a Installation Bug That Can Occurs If You Have Two Installation Of 
+  Different Operating Systems But With The Same Name In BOOT.INI.
+* Again, Rewritten First Run and Uninstall Progress To Fix Some Errors,
+  Now BootXP Search The BOOT.INI Path Via Windows Registry. Also Fixes a Bug
+  In BOOT.INI Generation. Uninstallation Progress More Safe Also.
+* Added a Feature To Backup The Current BOOT.INI Line Used By BootXP, Useful For Boot
+  With Deafult Boot Screens In Case of Problems.
+* Added The Option Of Preview/Install Boot Screens Via Drag And Drop.
+* Added a Option to Turn Off Overlay BMP Addition, Activate It For Get Rid The
+  Overlays "Professional" or "Home Edition" in XP Boot Screens.
+* New Feature Allows Direct Search of New BMP and EXE Boot Screens In Internet.
+* Added The Browse, Refresh and Delete Options To Boot Screens Directory.
+* Another Minor Bug Fixes, Optimizations and Error Handling.
+
+Not Included In This Version: Spanish Tranlation and Automatic Logo Change,
+  It Will Included In Future Versions.
+  
+Version 1.75
+-------------------------------------------------------------------------------
+* The Installation Process Was Completely Rewritten, Added Support For SCSI Installations
+  of XP, Added a BOOT.INI Repair (A lot of XP Installs Doesn't Haven't It), And Now Creates
+  a Copy Of BOOT.INI for Uninstall.
+* Two Metods Of Uninstalling Added: Using Backup and Removing References to "/kernel=LOGOOS.EXE"
+  in BOOT.INI.
+* 100% Windows® 2000 Compatibility. Use the Same BMP or NTOSKRNL File For XP or 2000.
+* Added Preview and Full Screen Animated Preview For Windows 2000 Users.
+* Fixed The Overlay Bug For Windows® XP Home Edition.
+* Updated all Links To The New Domain: www.bootxp.net
+
+Version 1.50
+-------------------------------------------------------------------------------
+* Removed Unused Code (Cleanup)
+* Overlay Bitmaps and Progress Bar Bitmaps Are Added Now
+* Improved BMP Extractor. Now Extracts The BMPs to a Own Format BBM (Boot Bitmap)
+* Added Support For NTOSKRNL.EXE Files and BBM (Boot Bitmaps)
+* Improved Preview Window. Now Show Overlays and Progress Bars (Animated)
+* New DirectX WYSIWYG Preview at 640x480 FullScreen. No More Test Boots.
+* Added a Little Installation Program
+
+Version 1.25
+-------------------------------------------------------------------------------
+* Fixed Minor Installation Bugs
+* Added Windows 2000 Bootscreen Compatibility
+* Added a BMP Preview to 640x480
+
+Version 1.20
+-------------------------------------------------------------------------------
+* First Public Release. Fully Functional.
+
+Version 1.00
+-------------------------------------------------------------------------------
+* First Private Release With a Lot of Bugs
